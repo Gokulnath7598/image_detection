@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
             setRecognitions,
           ),
           BndBox(
-              _recognitions == null ? [] : _recognitions,
+              _recognitions ?? [],
               math.max(_imageHeight, _imageWidth),
               math.min(_imageHeight, _imageWidth),
               screen.height,
